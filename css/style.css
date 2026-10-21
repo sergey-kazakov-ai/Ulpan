@@ -204,8 +204,7 @@ body {
 
 .btn-secondary:active,
 .btn-secondary.pressed {
-    transform: scale(0.95);
-    opacity: 0.85;
+    transform: scale(0.9);
     background: var(--accent);
     color: white;
 }

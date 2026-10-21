@@ -133,7 +133,9 @@ function setupTouchFeedback() {
         }, { passive: true });
 
         btn.addEventListener('touchend', function() {
-            this.classList.remove('pressed');
+            const el = this;
+            // Keep pressed state visible for at least 150ms
+            setTimeout(() => el.classList.remove('pressed'), 150);
         }, { passive: true });
 
         btn.addEventListener('touchcancel', function() {
